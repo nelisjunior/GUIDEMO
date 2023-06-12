@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace GUIDEMO
 {
     partial class login
@@ -197,6 +199,11 @@ namespace GUIDEMO
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void Label_password_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

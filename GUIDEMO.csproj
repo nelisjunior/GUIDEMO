@@ -46,6 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dbguidemo.cs">
+      <DependentUpon>dbguidemo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbguidemo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbguidemo.xsd</DependentUpon>
+    </Compile>
     <Compile Include="loguin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +75,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="dbguidemo.xsc">
+      <DependentUpon>dbguidemo.xsd</DependentUpon>
+    </None>
+    <None Include="dbguidemo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbguidemo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dbguidemo.xss">
+      <DependentUpon>dbguidemo.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\GUIDEMO.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\GUIDEMO.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\login.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -34,8 +34,17 @@ namespace GUIDEMO
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Account is Created");
-            this.Close();
+            //TextBoxes armazena o conteúdo das textbox
+            string username = textBox_username.Text;
+            string password = textBox_password.Text;
+            string password_repeat = textBox_password_repeat.Text;
+            //Verificar se a senha são iguais
+            if (password == password_repeat)
+            {
+                //Salva os dados do usuário no DataSources do GUIDEMO
+
+            
+
         }
 
         private void Label_password_Click(object sender, EventArgs e)
