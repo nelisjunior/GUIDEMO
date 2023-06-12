@@ -171,6 +171,7 @@ namespace GUIDEMO
             this.pictureBox_monkey.TabStop = false;
             this.pictureBox_monkey.UseWaitCursor = true;
             this.pictureBox_monkey.WaitOnLoad = true;
+            this.pictureBox_monkey.Click += new System.EventHandler(this.pictureBox_monkey_Click_1);
             // 
             // login
             // 

@@ -49,13 +49,13 @@ namespace GUIDEMO
             //O conteúdo da textbox muda de cor
             if (textBox_password.Text == textBox_password_repeat.Text)
             {
-                textBox_password.BackColor = System.Drawing.Color.Green;
-                textBox_password_repeat.BackColor = System.Drawing.Color.Green;
+                textBox_password.BackColor = System.Drawing.Color.LightGreen;
+                textBox_password_repeat.BackColor = System.Drawing.Color.LightGreen;
             }
             else
             {
-                textBox_password.BackColor = System.Drawing.Color.Red;
-                textBox_password_repeat.BackColor = System.Drawing.Color.Red;
+                textBox_password.BackColor = System.Drawing.Color.LightPink;
+                textBox_password_repeat.BackColor = System.Drawing.Color.LightPink;
             }
         }
 
@@ -91,12 +91,12 @@ namespace GUIDEMO
             if (button_show_hide.Text == "🙊")
             {
                 button_show_hide.Text = "🙈";
-                pictureBox_monkey.Image = GUIDEMO.Properties.Resources.monkey_2_;
+                pictureBox_monkey.Image = GUIDEMO.Properties.Resources.monkey_1_;
             }
             else
             {
                 button_show_hide.Text = "🙊";
-                pictureBox_monkey.Image = GUIDEMO.Properties.Resources.monkey_1_;
+                pictureBox_monkey.Image = GUIDEMO.Properties.Resources.monkey_2_;
             }
         }
 
@@ -111,6 +111,11 @@ namespace GUIDEMO
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox_monkey_Click_1(object sender, EventArgs e)
         {
 
         }
